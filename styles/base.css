@@ -1,0 +1,159 @@
+/* General Styles */
+/* Apply Google Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Navigation */
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* General Paragraph Text */
+p {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1c3b6d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.highlight {
+    color: #fbc531;
+}
+
+/* Navigation */
+nav {
+    background-color: #2d2d2d;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fbc531;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Main Layout */
+main {
+    max-width: 900px; /* Limits the width */
+    margin: 20px auto; /* Centers the main content */
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two-thirds for content, one-third for aside */
+    gap: 20px;
+    align-items: start;
+}
+
+/* Content Wrapper using CSS Grid */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Location Section */
+.location img {
+    width: 100px;
+    height: auto;
+}
+
+/* Sidebar */
+aside {
+    max-width: 100%;
+}
+
+.resources ul {
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1c3b6d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Stacks sections on smaller screens */
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin-top: 10px;
+    }
+}
