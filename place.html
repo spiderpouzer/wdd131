@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Natal my city">
+    <meta name="author" content="Matheus Silva de Medeiros">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <title>Place Information</title>
     <link rel="stylesheet" href="styles/country.css">
     <script src="scripts/country.js" defer></script>
@@ -14,8 +17,17 @@
 
     <main>
         <div class="image-container">
-            <img src="images/careca1.webp" alt="Morro do careca" class="mobile-img">
-            <img src="images/careca2.webp" alt="Large Morro do careca" class="wide-img">
+            <img 
+                src="images/careca2.webp" 
+                alt="Morro do careca"
+                srcset="
+                    images/careca1.webp 400w,
+                    images/careca2.webp 800w
+                "
+                sizes="(max-width: 767px) 100vw,
+                       (min-width: 768px) 100vw"
+                loading="lazy"
+            >
         </div>
 
         <div class="content-container">
