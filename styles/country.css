@@ -21,6 +21,13 @@ header h1 {
     margin: 20px 0;
 }
 
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .mobile-img {
     display: block;
     width: 100%;
